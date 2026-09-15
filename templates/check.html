@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check your result — Sakh.ai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="static/css/check.css"> -->
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='check.css') }}"> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/check.css') }}">
+</head>
+<body>
+
+  <div class="ambient" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a class="brand" href="/">Sakh<span>.ai</span></a>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="/">Home</a></li>
+      <li><a class="nav-link is-active" href="/docs">Documentation</a></li>
+      <li><a class="nav-link nav-cta" href="/check">Check result</a></li>
+    </ul>
+  </nav>
+
+  <main class="check-main">
+    <header class="check-intro">
+      <p class="eyebrow">AI credit assessment · India</p>
+      <h1>Check your result</h1>
+      <p class="lede">
+        Two short steps. Your name and phone number, then the six factors
+        lenders weigh. Nothing here touches your CIBIL score.
+      </p>
+    </header>
+
+    <div class="assess-card">
+      <div class="step-tracker" aria-hidden="true">
+        <span class="step-dot is-active" data-step-dot="1">1</span>
+        <span class="step-line"></span>
+        <span class="step-dot" data-step-dot="2">2</span>
+      </div>
+
+      <form id="assessForm" novalidate>
+
+        <fieldset class="form-step is-active" data-step="1">
+          <legend class="step-legend">Who are you</legend>
+
+          <label class="field">
+            <span class="field-label">Your name</span>
+            <input type="text" id="nameInput" name="name" autocomplete="name" placeholder="e.g. Aditi Sharma">
+            <span class="field-error" id="nameError" role="alert"></span>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Phone number</span>
+            <div class="phone-input">
+              <span class="phone-prefix">+91</span>
+              <input type="tel" id="phoneInput" name="phone" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number">
+            </div>
+            <span class="field-error" id="phoneError" role="alert"></span>
+          </label>
+
+          <div class="form-actions">
+            <span></span>
+            <button type="button" class="btn-primary" id="toStep2">Continue</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-step" data-step="2">
+          <legend class="step-legend">The six factors</legend>
+
+          <div class="field-grid">
+            <label class="field">
+              <span class="field-label">Age</span>
+              <input type="number" id="ageInput" name="age" min="18" max="100" placeholder="e.g. 29">
+            </label>
+
+            <label class="field">
+              <span class="field-label">Monthly salary (₹)</span>
+              <input type="number" id="salaryInput" name="salary" min="0" step="1000" placeholder="e.g. 60000">
+            </label>
+
+            <label class="field">
+              <span class="field-label">Employment type</span>
+              <select id="employmentInput" name="employment_type">
+                <option value="" disabled selected>Select one</option>
+                <option value="working">Working</option>
+                <option value="commercial_associate">Commercial associate</option>
+                <option value="pensioner">Pensioner</option>
+                <option value="state_servant">State servant</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span class="field-label">CIBIL score</span>
+              <input type="number" id="cibilInput" name="cibil_score" min="300" max="900" placeholder="300–900">
+            </label>
+
+            <label class="field">
+              <span class="field-label">City tier</span>
+              <select id="cityTierInput" name="city_tier">
+                <option value="" disabled selected>Select one</option>
+                <option value="1">Tier 1</option>
+                <option value="2">Tier 2</option>
+                <option value="3">Tier 3</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span class="field-label">FOIR (%)</span>
+              <input type="number" id="foirInput" name="foir_score" min="0" max="100" placeholder="e.g. 30">
+            </label>
+          </div>
+
+          <span class="field-error" id="step2Error" role="alert"></span>
+
+          <div class="form-actions">
+            <button type="button" class="btn-ghost" id="toStep1">Back</button>
+            <button type="submit" class="btn-primary" id="submitBtn">
+              <span class="btn-label">See my result</span>
+            </button>
+          </div>
+        </fieldset>
+
+      </form>
+
+      <div class="assess-result" id="assessResult" hidden></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span>Sakh.ai</span>
+    <span class="footer-note">An estimate, not a guarantee of approval.</span>
+    <span>&copy; Ashutosh Biswal</span>
+  </footer>
+
+  <script src="static/js/app.js" defer></script>
+</body>
+</html>

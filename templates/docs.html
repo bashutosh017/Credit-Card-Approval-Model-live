@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation — Sakh.ai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="static\css\docs.css"> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}">
+</head>
+<body>
+
+  <div class="ambient" aria-hidden="true"></div>
+
+ <nav class="nav">
+    <a class="brand" href="/">Sakh<span>.ai</span></a>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="/">Home</a></li>
+      <li><a class="nav-link is-active" href="/docs">Documentation</a></li>
+      <li><a class="nav-link nav-cta" href="/check">Check result</a></li>
+    </ul>
+  </nav>
+
+  <div class="docs-shell">
+
+    <aside class="docs-sidebar">
+      <p class="sidebar-kicker">Guide · 7 min read</p>
+      <ol class="toc" id="toc">
+        <li><a href="#credit-card" class="toc-link is-current"><span>01</span>What is a credit card</a></li>
+        <li><a href="#cibil" class="toc-link"><span>02</span>CIBIL score</a></li>
+        <li><a href="#foir" class="toc-link"><span>03</span>FOIR score</a></li>
+        <li><a href="#limit" class="toc-link"><span>04</span>Credit limit &amp; utilisation</a></li>
+        <li><a href="#interest" class="toc-link"><span>05</span>Interest &amp; interest-free period</a></li>
+        <li><a href="#billing" class="toc-link"><span>06</span>Billing cycle &amp; due date</a></li>
+        <li><a href="#tips" class="toc-link"><span>07</span>Raising your odds</a></li>
+      </ol>
+    </aside>
+
+    <main class="docs-content">
+
+      <header class="docs-intro">
+        <p class="eyebrow">Documentation</p>
+        <h1>The seven things worth understanding<br>before you apply.</h1>
+        <p class="lede">
+          Your approval model reads six inputs, but the terms behind them rarely get
+          explained anywhere. This page is that explanation — what each term means,
+          how lenders actually use it, and what you can do about it.
+        </p>
+      </header>
+
+      <section id="credit-card" class="doc-section">
+        <div class="section-head">
+          <span class="index-mark">01</span>
+          <h2>What is a credit card</h2>
+        </div>
+        <p class="definition">A card that lets you borrow a lender's money for everyday spending, and repay it later.</p>
+        <p>
+          Every credit card comes with a limit — the most the bank will lend you at once —
+          and a billing cycle that resets every month. Spend during the cycle, and the bank
+          settles the bill with the merchant immediately. You then owe that amount back,
+          either in full by the due date or gradually, with interest, if you carry a balance.
+        </p>
+        <p>
+          It's revolving credit: the moment you repay, that credit line opens back up. This
+          is different from a loan, where you borrow a fixed sum once and repay it down to zero.
+        </p>
+      </section>
+
+      <section id="cibil" class="doc-section">
+        <div class="section-head">
+          <span class="index-mark">02</span>
+          <h2>CIBIL score</h2>
+        </div>
+        <p class="definition">A three-digit number from 300–900 that summarises how reliably you've repaid debt in the past.</p>
+        <p>
+          It's maintained by TransUnion CIBIL, one of India's four credit bureaus, and built
+          from your loan and card repayment history — on-time payments, missed ones, how much
+          of your limit you use, and how many new accounts you've opened recently. Lenders pull
+          it the moment you apply, which is why an application itself can nudge the score
+          slightly through what's called a hard enquiry.
+        </p>
+
+        <div class="scale-card">
+          <div class="scale-card-head">
+            <span class="scale-label">Score range</span>
+            <span class="scale-value">782 <i>· example</i></span>
+          </div>
+          <div class="scale-bar">
+            <span class="scale-seg seg-poor" style="--from:0; --to:31"></span>
+            <span class="scale-seg seg-fair" style="--from:31; --to:46"></span>
+            <span class="scale-seg seg-good" style="--from:46; --to:73"></span>
+            <span class="scale-seg seg-vgood" style="--from:73; --to:83"></span>
+            <span class="scale-seg seg-excellent" style="--from:83; --to:100"></span>
+            <span class="scale-marker" style="--pos:80.3"></span>
+          </div>
+          <div class="scale-ticks">
+            <span>300</span><span>580</span><span>670</span><span>740</span><span>800</span><span>900</span>
+          </div>
+          <ul class="scale-legend">
+            <li><i class="dot seg-poor"></i>Poor · 300–579</li>
+            <li><i class="dot seg-fair"></i>Fair · 580–669</li>
+            <li><i class="dot seg-good"></i>Good · 670–739</li>
+            <li><i class="dot seg-vgood"></i>Very good · 740–799</li>
+            <li><i class="dot seg-excellent"></i>Excellent · 800–900</li>
+          </ul>
+        </div>
+        <p>Most card issuers in India set their bar somewhere in the "Good" band and up — 700 is a common informal cutoff.</p>
+      </section>
+
+      <section id="foir" class="doc-section">
+        <div class="section-head">
+          <span class="index-mark">03</span>
+          <h2>FOIR score</h2>
+        </div>
+        <p class="definition">Fixed Obligation to Income Ratio — the share of your monthly income already promised to other debts.</p>
+        <p>
+          Lenders total up your existing EMIs, rent, and other fixed repayments, then check how
+          much of your salary that eats up before a new card or loan even enters the picture.
+          A low FOIR means more breathing room in your income; a high one signals you're already
+          stretched.
+        </p>
+
+        <div class="formula-card">
+          <p class="formula-label">Formula</p>
+          <p class="formula">FOIR&nbsp;=&nbsp;(Fixed monthly obligations&nbsp;÷&nbsp;Monthly income)&nbsp;×&nbsp;100</p>
+          <div class="formula-example">
+            <div><span>Monthly income</span><strong>₹60,000</strong></div>
+            <div><span>Existing EMIs + rent</span><strong>₹18,000</strong></div>
+            <div class="formula-result"><span>FOIR</span><strong>30%</strong></div>
+          </div>
+        </div>
+
+        <div class="scale-card">
+          <div class="scale-bar scale-bar-foir">
+            <span class="scale-seg seg-excellent" style="--from:0; --to:40"></span>
+            <span class="scale-seg seg-fair" style="--from:40; --to:50"></span>
+            <span class="scale-seg seg-poor" style="--from:50; --to:100"></span>
+            <span class="scale-marker" style="--pos:30"></span>
+          </div>
+          <div class="scale-ticks">
+            <span>0%</span><span>40%</span><span>50%</span><span>100%</span>
+          </div>
+          <ul class="scale-legend">
+            <li><i class="dot seg-excellent"></i>Comfortable · under 40%</li>
+            <li><i class="dot seg-fair"></i>Caution · 40–50%</li>
+            <li><i class="dot seg-poor"></i>Stretched · over 50%</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="limit" class="doc-section">
+        <div class="section-head">
+          <span class="index-mark">04</span>
+          <h2>Credit limit &amp; utilisation</h2>
+        </div>
+        <p class="definition">Your limit is the ceiling you can borrow against; utilisation is how much of it you're actually using.</p>
+        <p>
+          A ₹20,000 balance on a ₹1,00,000 limit is 20% utilisation. Lenders and the CIBIL model
+          both read high utilisation as a sign of dependence on credit, even if every bill gets
+          paid on time. Staying under roughly 30% of any limit, on any single card, tends to
+          protect your score better than paying in full each month while running close to the edge.
+        </p>
+      </section>
+
+      <section id="interest" class="doc-section">
+        <div class="section-head">
+          <span class="index-mark">05</span>
+          <h2>Interest &amp; the interest-free period</h2>
+        </div>
+        <p class="definition">Most cards charge nothing if you clear the full statement by the due date — that gap is the interest-free period.</p>
+        <p>
+          It usually runs 18–50 days depending on when in the billing cycle you spent. Pay less
+          than the full amount, and the interest-free period disappears entirely for that cycle —
+          interest is then charged from the original transaction date, not just on the unpaid
+          balance. Card interest rates in India commonly sit between 30–45% annually, which is why
+          carrying a balance is one of the more expensive ways to borrow.
+        </p>
+      </section>
+
+      <section id="billing" class="doc-section">
+        <div class="section-head">
+          <span class="index-mark">06</span>
+          <h2>Billing cycle &amp; due date</h2>
+        </div>
+        <p class="definition">The billing cycle is the ~30-day window your spending is grouped into; the due date is when that bill is payable.</p>
+        <p>
+          At the end of the cycle, the bank issues a statement listing everything you spent and
+          the total owed. The due date typically falls 15–20 days after that statement date.
+          Missing it doesn't just add interest — a payment more than 30 days late is usually what
+          gets reported to CIBIL as a default, which is what actually damages the score.
+        </p>
+      </section>
+
+      <section id="tips" class="doc-section">
+        <div class="section-head">
+          <span class="index-mark">07</span>
+          <h2>Raising your odds</h2>
+        </div>
+        <p class="definition">Small, boring habits move these numbers more reliably than any single big decision.</p>
+        <ul class="tip-list">
+          <li><svg class="tip-check" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pay the full statement amount, not just the minimum due.</li>
+          <li><svg class="tip-check" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Keep utilisation under 30% of your limit on every card, not just on average.</li>
+          <li><svg class="tip-check" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Space out new applications — each hard enquiry has a small, temporary cost.</li>
+          <li><svg class="tip-check" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Keep old accounts open — a longer history helps more than a clean slate.</li>
+          <li><svg class="tip-check" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Check your CIBIL report yearly — bureau errors are common and are free to dispute.</li>
+        </ul>
+      </section>
+
+      <footer class="docs-footer">
+        <span>Sakh.ai</span>
+        <span class="footer-note">General information, not financial advice.</span>
+        <span>&copy; Ashutosh Biswal</span>
+      </footer>
+
+    </main>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll('.toc-link');
+    const sections = document.querySelectorAll('.doc-section');
+    const map = new Map();
+    links.forEach(l => map.set(l.getAttribute('href').slice(1), l));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const link = map.get(entry.target.id);
+        if (!link) return;
+        if (entry.isIntersecting) {
+          links.forEach(l => l.classList.remove('is-current'));
+          link.classList.add('is-current');
+        }
+      });
+    }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+
+    sections.forEach(s => observer.observe(s));
+  </script>
+
+</body>
+</html>

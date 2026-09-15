@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credit Card Approval Model — Know your odds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="static\css\inex.css"> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/inex.css') }}">
+</head>
+<body>
+
+  <div class="ambient" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a class="brand" href="/">Sakh<span>.ai</span></a>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="/">Home</a></li>
+      <li><a class="nav-link is-active" href="/docs">Documentation</a></li>
+      <li><a class="nav-link nav-cta" href="/check">Check result</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AI credit assessment · India</p>
+        <h1 id="titel_para">Know your odds<br>before the enquiry<br>hits your report.</h1>
+        <p class="lede">
+          A credit card lends you money against your own future repayment. This model
+          reads six factors lenders actually weigh, and gives you an honest read on your
+          approval chances — before you apply anywhere.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#assess">Check your odds</a>
+          <span class="hero-note">Soft check only · no impact on your CIBIL score</span>
+        </div>
+      </div>
+
+      <div class="score-card" role="img" aria-label="Sample result: CIBIL score 782, likely approved">
+        <div class="score-card-head">
+          <span class="score-card-label">Sample result</span>
+          <span class="badge badge-good">Likely approved</span>
+        </div>
+
+        <div class="gauge-wrap">
+          <svg viewBox="0 0 200 200" class="gauge">
+            <circle cx="100" cy="100" r="86" class="gauge-track"/>
+            <circle cx="100" cy="100" r="86" class="gauge-fill"/>
+          </svg>
+          <div class="gauge-center">
+            <span class="gauge-value">782</span>
+            <span class="gauge-caption">CIBIL score</span>
+          </div>
+        </div>
+
+        <ul class="factor-rows">
+          <li><span>Salary</span><i style="--w:82%"></i></li>
+          <li><span>Employment type</span><i style="--w:70%"></i></li>
+          <li><span>City tier</span><i style="--w:60%"></i></li>
+          <li><span>FOIR score</span><i style="--w:88%"></i></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" id="needed_1">
+      <div class="panel-head">
+        <span class="index-mark">A</span>
+        <h2>What we ask you for</h2>
+      </div>
+      <div class="pill-row">
+        <div class="pill">
+          <span class="pill-label">Your name</span>
+          <p>So we know whose result this is. Nothing more.</p>
+        </div>
+        <div class="pill">
+          <span class="pill-label">Phone number</span>
+          <p>To send your result. We never call, and there's no OTP step.</p>
+        </div>
+      </div>
+      <p class="reassure">That's it. No PAN, no card number, no bank login.</p>
+    </section>
+
+    <section class="panel" id="needed_2" aria-labelledby="assess">
+      <div class="panel-head">
+        <span class="index-mark">B</span>
+        <h2 id="assess">What decides the outcome</h2>
+      </div>
+      <div class="factor-grid">
+        <article class="factor-card">
+          <span class="factor-label">Age</span>
+          <p>Lenders read age as repayment horizon — how long you'll likely stay banked with them.</p>
+        </article>
+        <article class="factor-card">
+          <span class="factor-label">Salary</span>
+          <p>Your income sets the ceiling on the credit limit a lender is willing to offer.</p>
+        </article>
+        <article class="factor-card">
+          <span class="factor-label">Employment type</span>
+          <p>Salaried, self-employed, or business — each carries a different risk weighting.</p>
+        </article>
+        <article class="factor-card">
+          <span class="factor-label">CIBIL score</span>
+          <p>Your repayment history on record, out of 900. The single most-weighted input.</p>
+        </article>
+        <article class="factor-card">
+          <span class="factor-label">City tier</span>
+          <p>Tier 1, 2, or 3 cities carry different cost-of-living and default-rate assumptions.</p>
+        </article>
+        <article class="factor-card">
+          <span class="factor-label">FOIR score</span>
+          <p>Fixed Obligation to Income Ratio — how much of your salary is already spoken for.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Sakh.ai</span>
+    <span class="footer-note">An estimate, not a guarantee of approval.</span>
+    <span>&copy; Ashutosh Biswal</span>
+  </footer>
+
+</body>
+</html>

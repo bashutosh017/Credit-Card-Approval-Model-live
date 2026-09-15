@@ -1,0 +1,127 @@
+2026-09-11 20:52:48,120 | INFO     | sakh-ai | [ff66cd06b9224cbbadaeb9871554df7e] Prediction complete: approved=True probability=0.9813 (4236.6ms)
+2026-09-11 20:53:05,221 | INFO     | sakh-ai | [84820f5b4b644373a1aa40c228b0988f] Prediction complete: approved=True probability=0.9796 (7.5ms)
+2026-09-11 20:53:07,288 | INFO     | sakh-ai | [e78ecd5411d047438d96e7327d88ba09] Prediction complete: approved=True probability=0.9796 (6.5ms)
+2026-09-11 20:53:10,082 | INFO     | sakh-ai | [3aaadfd1730140d487e4a6c026918827] Prediction complete: approved=True probability=0.9796 (47.6ms)
+2026-09-11 20:53:45,883 | INFO     | sakh-ai | [d45ca52dbcb348ab81a618268b3c88ad] Prediction complete: approved=True probability=0.9501 (7.3ms)
+2026-09-11 20:54:30,491 | INFO     | sakh-ai | [9df1fed1cfcc41a59b10ce6f9b1b526f] Prediction complete: approved=False probability=0.1271 (6.9ms)
+2026-09-15 15:48:33,211 | ERROR    | sakh-ai | [fac981a4825240a696a3e6b119e0c7c0] Model inference failed
+Traceback (most recent call last):
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 183, in predict
+    approved, probability_approved = run_model(features)
+                                     ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 137, in run_model
+    df = df[model_features]
+            ^^^^^^^^^^^^^^
+NameError: name 'model_features' is not defined
+2026-09-15 15:49:45,038 | ERROR    | sakh-ai | [b4cbceeab1b140eb8b8f87e1464b0aa5] Model inference failed
+Traceback (most recent call last):
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 183, in predict
+    approved, probability_approved = run_model(features)
+                                     ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 137, in run_model
+    df = df[model_features]
+            ^^^^^^^^^^^^^^
+NameError: name 'model_features' is not defined
+2026-09-15 15:49:45,768 | ERROR    | sakh-ai | [fbcff3df07fa41d1a341b8997ee08c54] Model inference failed
+Traceback (most recent call last):
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 183, in predict
+    approved, probability_approved = run_model(features)
+                                     ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 137, in run_model
+    df = df[model_features]
+            ^^^^^^^^^^^^^^
+NameError: name 'model_features' is not defined
+2026-09-15 15:49:45,961 | ERROR    | sakh-ai | [5b90ea6d95924be1af1ed47f80efa1b7] Model inference failed
+Traceback (most recent call last):
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 183, in predict
+    approved, probability_approved = run_model(features)
+                                     ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 137, in run_model
+    df = df[model_features]
+            ^^^^^^^^^^^^^^
+NameError: name 'model_features' is not defined
+2026-09-15 15:49:46,162 | ERROR    | sakh-ai | [78ad4d9e70be41beaaed551e8b9c1457] Model inference failed
+Traceback (most recent call last):
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 183, in predict
+    approved, probability_approved = run_model(features)
+                                     ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 137, in run_model
+    df = df[model_features]
+            ^^^^^^^^^^^^^^
+NameError: name 'model_features' is not defined
+2026-09-15 15:50:20,312 | ERROR    | sakh-ai | [39b0f6397f22421eaaa3aa5a0655d9d1] Model inference failed
+Traceback (most recent call last):
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 183, in predict
+    approved, probability_approved = run_model(features)
+                                     ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 137, in run_model
+    df = df[model_features]
+            ^^^^^^^^^^^^^^
+NameError: name 'model_features' is not defined
+2026-09-15 15:52:01,360 | ERROR    | sakh-ai | [e6f1e00add0c4352b83440e8b4d29f2c] Model inference failed
+Traceback (most recent call last):
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 183, in predict
+    approved, probability_approved = run_model(features)
+                                     ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 137, in run_model
+    df = df[features]
+         ~~^^^^^^^^^^
+  File "C:\Users\Lipun\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4074, in __getitem__
+    check_dict_or_set_indexers(key)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Lipun\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 2819, in check_dict_or_set_indexers
+    raise TypeError(
+        "Passing a dict as an indexer is not supported. Use a list instead."
+    )
+TypeError: Passing a dict as an indexer is not supported. Use a list instead.
+2026-09-15 15:52:02,393 | ERROR    | sakh-ai | [8e4798bd8b634ceca91eece2e61efe1c] Model inference failed
+Traceback (most recent call last):
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 183, in predict
+    approved, probability_approved = run_model(features)
+                                     ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 137, in run_model
+    df = df[features]
+         ~~^^^^^^^^^^
+  File "C:\Users\Lipun\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4074, in __getitem__
+    check_dict_or_set_indexers(key)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Lipun\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 2819, in check_dict_or_set_indexers
+    raise TypeError(
+        "Passing a dict as an indexer is not supported. Use a list instead."
+    )
+TypeError: Passing a dict as an indexer is not supported. Use a list instead.
+2026-09-15 15:52:08,581 | ERROR    | sakh-ai | [49e6fc24075c43368c0fc81819ed0901] Model inference failed
+Traceback (most recent call last):
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 183, in predict
+    approved, probability_approved = run_model(features)
+                                     ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 137, in run_model
+    df = df[features]
+         ~~^^^^^^^^^^
+  File "C:\Users\Lipun\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4074, in __getitem__
+    check_dict_or_set_indexers(key)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Lipun\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 2819, in check_dict_or_set_indexers
+    raise TypeError(
+        "Passing a dict as an indexer is not supported. Use a list instead."
+    )
+TypeError: Passing a dict as an indexer is not supported. Use a list instead.
+2026-09-15 15:52:38,994 | ERROR    | sakh-ai | [dbab2acc8b994afcad12fc3cda2a9884] Model inference failed
+Traceback (most recent call last):
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 183, in predict
+    approved, probability_approved = run_model(features)
+                                     ~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Lipun\Desktop\Deploy\Credit Card Model\app.py", line 137, in run_model
+    df = df[features]
+         ~~^^^^^^^^^^
+  File "C:\Users\Lipun\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4074, in __getitem__
+    check_dict_or_set_indexers(key)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Lipun\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexing.py", line 2819, in check_dict_or_set_indexers
+    raise TypeError(
+        "Passing a dict as an indexer is not supported. Use a list instead."
+    )
+TypeError: Passing a dict as an indexer is not supported. Use a list instead.
+2026-09-15 15:55:13,431 | INFO     | sakh-ai | [4199941e90ea42d0a2a670ab476c670e] Prediction complete: approved=True probability=0.8015 (6601.4ms)
+2026-09-15 15:55:28,988 | INFO     | sakh-ai | [a68807473e4f4304b592ca418fe1014d] Prediction complete: approved=False probability=0.0334 (14.0ms)
+2026-09-15 15:55:46,626 | INFO     | sakh-ai | [aa7b88f6cc65414c89f5c1ce2b27b219] Prediction complete: approved=True probability=0.8987 (11.0ms)
