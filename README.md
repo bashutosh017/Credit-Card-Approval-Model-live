@@ -5,8 +5,8 @@ A robust, production-grade Machine Learning pipeline built using **LightGBM** to
 This project addresses real-world challenges in risk management—including **Class Imbalance** (80/20 market skew) and **Stochastic Market Noise** (field verification failures, documentation errors)—shifting it from a simple academic exercise to an enterprise-grade classification model.
 
 [![Architecture diagram of bashutosh017/credit-card-approval-ml-model](https://gitdiagram.com/bashutosh017/credit-card-approval-ml-model/diagram.png)](https://gitdiagram.com/bashutosh017/credit-card-approval-ml-model?utm_source=readme&utm_medium=picture)
+ 
 
-[![Architecture diagram of bashutosh017/credit-card-approval-model-live](https://gitdiagram.com/bashutosh017/credit-card-approval-model-live/diagram.png)](https://gitdiagram.com/bashutosh017/credit-card-approval-model-live?utm_source=readme&utm_medium=picture)
 
 
 
@@ -101,3 +101,23 @@ Evaluated on a 200-sample randomized test holdout split:
 * **`n_estimators=100`**: Iterates up to 100 progressive gradient boosting trees to refine decision boundary splits.
 * **`max_depth=5`**: Limits tree depth to 5 hierarchical levels, preventing the algorithm from memorizing noise profiles (**Overfitting**).
 * **`random_state=42`**: Anchors pseudo-random generation factors to establish exact metric reproducibility across execution environments.
+
+
+Directory structure:
+└── bashutosh017-credit-card-approval-model-live/
+    ├── README.md
+    ├── app.py
+    ├── Model_feature2.pkl
+    ├── requirements.txt
+    ├── .gitnore
+    ├── static/
+    │   ├── css/
+    │   │   ├── check.css
+    │   │   ├── docs.css
+    │   │   └── inex.css
+    │   └── js/
+    │       └── app.js
+    └── templates/
+        ├── check.html
+        ├── docs.html
+        └── index.html
