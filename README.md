@@ -6,8 +6,8 @@ This project addresses real-world challenges in risk management—including **Cl
 
 [![Architecture diagram of bashutosh017/credit-card-approval-ml-model](https://gitdiagram.com/bashutosh017/credit-card-approval-ml-model/diagram.png)](https://gitdiagram.com/bashutosh017/credit-card-approval-ml-model?utm_source=readme&utm_medium=picture)
 
-
 [![Architecture diagram of bashutosh017/credit-card-approval-model-live](https://gitdiagram.com/bashutosh017/credit-card-approval-model-live/diagram.png)](https://gitdiagram.com/bashutosh017/credit-card-approval-model-live?utm_source=readme&utm_medium=picture)
+
 
 
 ---
