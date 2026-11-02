@@ -1,1 +1,17 @@
 
+version: "1"
+projects:
+- name: Credit Credit
+  environments:
+  - name: UAT
+    services:
+    - type: web
+      name: Credit-Card-Approval-Model-live
+      runtime: python
+      repo: https://github.com/bashutosh017/Credit-Card-Approval-Model-live
+      plan: free
+      region: oregon
+      buildCommand: pip install -r requirements.txt
+      startCommand: gunicorn app:app
+      autoDeployTrigger: commit
+
